@@ -71,7 +71,7 @@ export const buttons = [
     {
         id: 'button-2',
         title: 'Mira aqui tus votos',
-        link: '/svotos',
+        link: '/votos',
         icon: 'bx bx-right-arrow-alt'
     }
 ]
