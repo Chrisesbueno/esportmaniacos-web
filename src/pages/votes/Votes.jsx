@@ -1,7 +1,7 @@
 import React, { createRef, useEffect } from 'react'
 import { Award } from '../../components'
 import { base, premios } from '../../constants'
-import { useScreenshot, createFileName } from 'use-react-screenshot'
+// import { useScreenshot, createFileName } from 'use-react-screenshot'
 import './votes.css'
 
 const Votes = () => {
@@ -21,28 +21,28 @@ const Votes = () => {
     JSON.parse(localStorage.getItem('premio-12')),
   ]
 
-  const ref = createRef(null)
-  const [image, takeScreenShot] = useScreenshot()
+  // const ref = createRef(null)
+  // const [image, takeScreenShot] = useScreenshot()
 
-  const download = (image, { name = 'img', extension = 'png' } = {}) => {
-    const a = document.createElement('a')
-    a.href = image
-    a.download = createFileName(extension, name)
-    a.click()
-  }
+  // const download = (image, { name = 'img', extension = 'png' } = {}) => {
+  //   const a = document.createElement('a')
+  //   a.href = image
+  //   a.download = createFileName(extension, name)
+  //   a.click()
+  // }
 
-  const getImage = () => takeScreenShot(ref.current)
+  // const getImage = () => takeScreenShot(ref.current)
 
-  useEffect(() => {
-    if (image) {
-      download(image, { name: 'premios-esportmaniacos', extension: 'png' })
-    }
-  }, [image])
+  // useEffect(() => {
+  //   if (image) {
+  //     download(image, { name: 'premios-esportmaniacos', extension: 'png' })
+  //   }
+  // }, [image])
 
   return (
     
-    <div className='votes section' id='capture' ref={ref}>
-      <button className='descargar button button--flex' onClick={getImage} >
+    <div className='votes section' id='capture'>
+      <button className='descargar button button--flex'>
         {`Descargar votos`}
         <i className='bx bxs-download'></i>
       </button>
