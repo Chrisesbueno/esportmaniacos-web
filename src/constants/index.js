@@ -11,7 +11,7 @@ export const base = {
         third: '2022'
     },
     twitch: 'esportmaniacos',
-    parent: 'localhost',
+    parent: 'https://esportmaniacos.netlify.app/',
     youtube: 'DI52CRFHgiY',
     twitter: 'esportmaniacos'
 }
