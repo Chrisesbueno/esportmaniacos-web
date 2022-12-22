@@ -16,15 +16,6 @@ export const base = {
     twitter: 'esportmaniacos'
 }
 
-export const tertulianos = [
-    {
-        name: 'Yuste',
-        twitter: 'x',
-        twicth: 'x',
-        img: ''
-    }
-]
-
 export const menu = [
     {
         id: 'menu-1',
@@ -80,7 +71,7 @@ export const buttons = [
     {
         id: 'button-2',
         title: 'Mira aqui tus votos',
-        link: '/votos',
+        link: '/svotos',
         icon: 'bx bx-right-arrow-alt'
     }
 ]

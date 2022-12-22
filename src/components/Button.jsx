@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 const Button = ({link, title, icon}) => {
   return (
     <div>
-        <NavLink reloadDocument to={`/${link}`} className='button button--flex' >
+        <NavLink to={`${link}`} className='button button--flex' >
           {title}
           <i className={`${icon} icon-social`}></i>
         </NavLink>
